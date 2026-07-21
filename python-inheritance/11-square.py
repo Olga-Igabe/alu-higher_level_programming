@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Module that defines a Square class with a custom string
+representation."""
 Rectangle = __import__('9-rectangle').Rectangle
 
 

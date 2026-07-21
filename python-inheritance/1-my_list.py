@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Module that defines the MyList class, a list subclass."""
+
+
 class MyList(list):
     """A list subclass that can print itself in sorted order."""
 
