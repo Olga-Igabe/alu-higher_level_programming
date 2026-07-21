@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def inherits_from(obj, a_class):
     """Return True if obj's class inherits (directly or indirectly)
     from a_class, but is not a_class itself."""
