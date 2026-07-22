@@ -1,0 +1,51 @@
+The ``5-text_indentation`` module
+====================================
+
+Using text_indentation
+-------------------------
+
+Import the function:
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Text ending in a period:
+
+    >>> text_indentation("Best. School")
+    Best.
+    <BLANKLINE>
+    School
+
+Text ending in a question mark:
+
+    >>> text_indentation("Hello? World")
+    Hello?
+    <BLANKLINE>
+    World
+
+Text ending in a colon:
+
+    >>> text_indentation("Note: read this")
+    Note:
+    <BLANKLINE>
+    read this
+
+Text with no trigger characters:
+
+    >>> text_indentation("no punctuation here")
+    no punctuation here
+
+Not a string:
+
+    >>> text_indentation(89)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+Not a string (None):
+
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+Empty string prints nothing:
+
+    >>> text_indentation("")
